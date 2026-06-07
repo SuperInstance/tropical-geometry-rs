@@ -1,0 +1,12 @@
+[package]
+name = "lau-tropical-geometry"
+version = "0.1.0"
+edition = "2021"
+description = "Research-grade tropical geometry: semirings, polynomials, curves, Newton polytopes, intersections"
+license = "MIT"
+repository = "https://github.com/SuperInstance/lau-tropical-geometry"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+
+[dev-dependencies]
