@@ -16,6 +16,8 @@ pub mod polytope;
 pub mod curve;
 pub mod rational_map;
 pub mod intersection;
+pub mod newton_polytope;
+pub mod tropical_basis;
 
 pub use semiring::TropicalSemiring;
 pub use monomial::TropicalMonomial;
@@ -24,3 +26,5 @@ pub use polytope::{NewtonPolytope, Facet};
 pub use curve::{TropicalCurve, TropicalEdge, TropicalVertex};
 pub use rational_map::TropicalRationalMap;
 pub use intersection::TropicalIntersection;
+pub use newton_polytope::{TropicalNewtonPolytope, minkowski_sum};
+pub use tropical_basis::{TropicalHypersurface, TropicalPrevariety, tropical_variety};
