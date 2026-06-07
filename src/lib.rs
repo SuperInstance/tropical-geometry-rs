@@ -18,6 +18,7 @@ pub mod rational_map;
 pub mod intersection;
 pub mod newton_polytope;
 pub mod tropical_basis;
+pub mod harmonic;
 
 pub use semiring::TropicalSemiring;
 pub use monomial::TropicalMonomial;
@@ -28,3 +29,8 @@ pub use rational_map::TropicalRationalMap;
 pub use intersection::TropicalIntersection;
 pub use newton_polytope::{TropicalNewtonPolytope, minkowski_sum};
 pub use tropical_basis::{TropicalHypersurface, TropicalPrevariety, tropical_variety};
+pub use harmonic::{
+    optimal_voice_leading, tropical_chord_distance, tropical_add, tropical_mul,
+    tropical_scalar_mul, tropical_dominance,
+    VoiceLeading, TropicalChordSpace, TropicalHarmonicAnalysis,
+};
